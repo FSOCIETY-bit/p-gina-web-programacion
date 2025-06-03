@@ -1,0 +1,37 @@
+body{
+    background-color: aqua;
+     border-radius: 10%;
+}
+
+h1{
+    font-size: 24px; color: blueviolet;
+
+}
+
+p{
+color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: medium;
+font-weight: 200;
+margin: auto;
+padding: 10%;
+border: 10px;
+}
+
+
+
+
+div{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color:aquamarine ;
+}
+
+.xddd{
+    width: 80%;
+    height: 100px;
+    background-color: black;
+    box-shadow: 10px 10px 5px linear-gradient(90 deg, #ff0000,#ff0000); 
+}
+

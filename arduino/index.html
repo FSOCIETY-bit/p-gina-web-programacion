@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Página de Programación PRO</title>
+<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+<button class="menu-btn" aria-label="Abrir menú" title="Abrir menú">☰</button>
+<button class="modo-btn" aria-label="Cambiar modo claro/oscuro" title="Cambiar modo claro/oscuro">🌗</button>
+
+<nav class="sidebar" id="sidebar" role="navigation" aria-label="Menú de lenguajes">
+  <h2>Menú de Lenguajes</h2>
+  <a href="#html" data-tab="frontend">🌐 HTML</a>
+  <a href="#css" data-tab="frontend">🎨 CSS</a>
+  <a href="#js" data-tab="frontend">📜 JavaScript</a>
+  <a href="#python" data-tab="backend">🐍 Python</a>
+  <a href="#php" data-tab="backend">🐘 PHP</a>
+  <a href="#nodejs" data-tab="backend">🟢 Node.js</a>
+  <a href="#cpp" data-tab="otros">💻 C++</a>
+  <a href="#java" data-tab="otros">☕ Java</a>
+  <a href="#sql" data-tab="otros">🧾 SQL</a>
+</nav>
+
+<header>
+  <h1>Página de Programación PRO</h1>
+</header>
+
+<main class="contenido">
+  <div class="tabs" role="tablist" aria-label="Categorías de lenguajes">
+    <button class="tab active" data-tab="frontend" role="tab" aria-selected="true" aria-controls="frontend-section" id="tab-frontend" tabindex="0">Frontend</button>
+    <button class="tab" data-tab="backend" role="tab" aria-selected="false" aria-controls="backend-section" id="tab-backend" tabindex="-1">Backend</button>
+    <button class="tab" data-tab="otros" role="tab" aria-selected="false" aria-controls="otros-section" id="tab-otros" tabindex="-1">Otros</button>
+  </div>
+
+  <section id="frontend-section" class="categoria" role="tabpanel" aria-labelledby="tab-frontend">
+    <article class="card" id="html" tabindex="0">
+ <h3>🌐 HTML</h3>
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Hola Mundo&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;¡Hola Mundo!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+      </code></pre>
+    </article>
+
+    <article class="card" id="css" tabindex="0">
+      <h3>🎨 CSS</h3>
+      <pre><code>
+body {
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+      </code></pre>
+    </article>
+
+    <article class="card" id="js" tabindex="0">
+      <h3>📜 JavaScript</h3>
+      <pre><code>
+console.log("¡Hola Mundo!");
+      </code></pre>
+    </article>
+  </section>
+
+  <section id="backend-section" class="categoria" role="tabpanel" aria-labelledby="tab-backend" hidden>
+    <article class="card" id="python" tabindex="0">
+   <h3>🐍 Python</h3>
+      <pre><code>
+print("¡Hola Mundo!")
+      </code></pre>
+    </article>
+
+    <article class="card" id="php" tabindex="0">
+      <h3>🐘 PHP</h3>
+      <pre><code>
+&lt;?php
+echo "¡Hola Mundo!";
+?&gt;
+      </code></pre>
+    </article>
+
+    <article class="card" id="nodejs" tabindex="0">
+      <h3>🟢 Node.js</h3>
+      <pre><code>
+console.log("¡Hola Mundo desde Node.js!");
+      </code></pre>
+    </article>
+  </section>
+
+  <section id="otros-section" class="categoria" role="tabpanel" aria-labelledby="tab-otros" hidden>
+    <article class="card" id="cpp" tabindex="0">
+      <h3>💻 C++</h3>
+      <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+ cout &lt;&lt; "¡Hola Mundo!" &lt;&lt; endl;
+  return 0;
+}
+      </code></pre>
+    </article>
+
+    <article class="card" id="java" tabindex="0">
+      <h3>☕ Java</h3>
+      <pre><code>
+public class HolaMundo {
+  public static void main(String[] args) {
+    System.out.println("¡Hola Mundo!");
+  }
+}
+      </code></pre>
+    </article>
+
+    <article class="card" id="sql" tabindex="0">
+      <h3>🧾 SQL</h3>
+      <pre><code>
+SELECT * FROM usuarios WHERE activo = 1;
+      </code></pre>
+    </article>
+  </section>
+</main>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

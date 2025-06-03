@@ -1,0 +1,32 @@
+
+body  {
+    background:linear-gradient(rgb(70, 70, 79), rgb(216, 27, 27));
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.item {
+    background-color: rgb(45, 177, 67);
+}
+.item:nth-child(1),
+.item:nth-child(4) {
+    width: 100%;
+    background-color: aqua;
+    height: 5%;
+}
+
+.item:nth-child(2) {
+    width: 25%;
+    height: 75%;
+}
+
+.item:nth-child(3) {
+    flex-grow: 1%;
+    height: 75%;
+}
